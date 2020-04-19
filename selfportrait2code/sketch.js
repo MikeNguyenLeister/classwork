@@ -13,6 +13,10 @@
     var w2 = 0;
     var h2 = 0;
 
+//rotate 
+ 
+   var x1 = 1
+
 function setup() {
 	createCanvas(640, 360);
 }
@@ -61,10 +65,10 @@ function draw() {
 	
 	// reflections
 	fill(255,255,255, 160);
-	ellipse(x + 90, y - 95, w/10 - 1, h/10 + 1);
-    ellipse(x + 70, y - 85, w/10 - 17, h/10 - 10);
     ellipse(x - 80, y - 95, w/10 - 1, h/10 + 1);
-    ellipse(x - 58, y - 85, w/10 - 17, h/10 - 10);
+    ellipse(x - 68, y - 78, w/10 - 17, h/10 - 10);
+    ellipse(x + 45, y - 95, w/10 - 1, h/10 + 1);
+    ellipse(x + 55, y - 78, w/10 - 17, h/10 - 10);
 
 
 	// mouth
@@ -84,6 +88,39 @@ function draw() {
     fill(255, 215, 0, 75)
     ellipse(x, y - 10, w/10 - 1, h/10 + 1)  
   
+  
+    //palm
+    noStroke()
+    fill("LightGreen")
+    ellipse (203, 290, 43, 43);
+  
+    //thumb
+    noStroke()
+    fill("LightGreen")
+    ellipse (225, 268, 20, 20);
+
+  
+     //fingers darker shade
+    noStroke()
+    fill("MediumSeaGreen")
+    rect(167, 270, 42, 12, 10);
+   
+    noStroke()
+    fill("MediumSeaGreen")
+    rect(167, 290, 47, 12, 10);
+    //arm
+  
+    noStroke()
+    fill("MediumSeaGreen")
+    rect(195, 300, 20, 80, 10);
+  
+    noStroke()
+    fill("LightGreen")
+    rect(200, 300, 20, 80, 10);
+  
+   
+    
+    
     //cone
     noStroke()
     fill("SaddleBrown")
@@ -91,7 +128,7 @@ function draw() {
    
     //icecream
 
-    //bottom layer scoop of vanilla ice cream
+    //first scoop of vanilla ice cream
     noStroke()
     fill("White")
     ellipse (200, 230, 60, 60);
@@ -99,7 +136,7 @@ function draw() {
     ellipse (200, 255, 22, 22);
     ellipse (218, 255, 22, 22);
   
-    //second layer scoop of chocolate ice cream
+    //second scoop of chocolate ice cream
     noStroke()
     fill("Chocolate")
     ellipse (200, 190, 60, 60);
@@ -107,7 +144,7 @@ function draw() {
     ellipse (200, 215, 22, 22);
     ellipse (218, 215, 22, 22);
   
-    //third layer scoop of green tea ice cream  
+    //third scoop of green tea ice cream  
     noStroke()
     fill("LightGreen")
     ellipse (200, 150, 60, 60);
@@ -115,7 +152,7 @@ function draw() {
     ellipse (200, 175, 22, 22);
     ellipse (218, 175, 22, 22);
 
-    //fourth layer scoop of chocolate ice cream
+    //fourth scoop of chocolate ice cream
 
     noStroke()
     fill("Chocolate")
@@ -124,7 +161,7 @@ function draw() {
     ellipse (200, 135, 22, 22);
     ellipse (218, 135, 22, 22);
   
-   //fifth layer scoop of mango ice cream
+   //fifth scoop of mango ice cream
 
     noStroke()
     fill("Gold")
@@ -138,20 +175,20 @@ function draw() {
     fill("Red")
     ellipse (190, 40, 14, 14);
   
-    //hand
+  
+    //fingers
     noStroke()
     fill("LightGreen")
-    rect(75, 200, 50, 10, 10);
-
-    //arm
+    rect(176, 270, 42, 12, 10);
+   
     noStroke()
     fill("LightGreen")
-    rect(75, 125, 50, 10, 10);
-
-  
-
-  
+    rect(176, 290, 47, 12, 10);
+    
     //glaze
     fill(205, 92, 92, 75)
     rect(x - x, y - y, 640, 360)
+
+
+ 
 }
