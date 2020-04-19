@@ -6,6 +6,8 @@
     var h = 190;
 	var eyeColor = "black";
 
+//I will fill in the bottom variables pertaining to hand and ice cream cone when I get around to the interactive self portrait tonight. Additional groups of variables may follow in case I need to group the eyes or mouth portions together.  
+
     var x2 = 0;
     var y2 = 0;
     var w2 = 0;
@@ -36,7 +38,7 @@ function draw() {
   
     //chin
     arc(x, y - 60, w/2 - 5, h - 40, 50, PI);
-    
+
 	//neck
     rect(x - 20, y, w/4 - 20, h - 100);
   
@@ -89,50 +91,53 @@ function draw() {
    
     //icecream
 
-    noStroke()
-    fill("Gold")
-    ellipse (50, 50, 60, 60);
-    ellipse (150, 50, 25, 25);
-    ellipse (150, 150, 25, 25);
-    ellipse (150, 200, 25, 25);
-
+    //bottom layer scoop of vanilla ice cream
     noStroke()
     fill("White")
-    ellipse (50, 225, 60, 60);
-    ellipse (150, 250, 25, 25);
-    ellipse (150, 270, 25, 25);
-    ellipse (150, 290, 25, 25);
+    ellipse (200, 230, 60, 60);
+    ellipse (182, 255, 22, 22);
+    ellipse (200, 255, 22, 22);
+    ellipse (218, 255, 22, 22);
   
+    //second layer scoop of chocolate ice cream
+    noStroke()
+    fill("Chocolate")
+    ellipse (200, 190, 60, 60);
+    ellipse (182, 215, 22, 22);
+    ellipse (200, 215, 22, 22);
+    ellipse (218, 215, 22, 22);
+  
+    //third layer scoop of green tea ice cream  
+    noStroke()
+    fill("LightGreen")
+    ellipse (200, 150, 60, 60);
+    ellipse (182, 175, 22, 22);
+    ellipse (200, 175, 22, 22);
+    ellipse (218, 175, 22, 22);
+
+    //fourth layer scoop of chocolate ice cream
 
     noStroke()
     fill("Chocolate")
-    ellipse (50, 300, 60, 60);
-    ellipse (150, 330, 25, 25);
-    ellipse (150, 340, 25, 25);
-    ellipse (150, 350, 25, 25);
+    ellipse (200, 110, 60, 60);
+    ellipse (182, 135, 22, 22);
+    ellipse (200, 135, 22, 22);
+    ellipse (218, 135, 22, 22);
+  
+   //fifth layer scoop of mango ice cream
 
     noStroke()
     fill("Gold")
-    ellipse (50, 50, 60, 60);
-    ellipse (150, 50, 25, 25);
-    ellipse (150, 150, 25, 25);
-    ellipse (150, 200, 25, 25);
-
-    noStroke()
-    fill("White")
-    ellipse (50, 225, 60, 60);
-    ellipse (150, 250, 25, 25);
-    ellipse (150, 270, 25, 25);
-    ellipse (150, 290, 25, 25);
+    ellipse (200, 70, 60, 60);
+    ellipse (182, 95, 22, 22);
+    ellipse (200, 95, 22, 22);
+    ellipse (218, 95, 22, 22);
   
-  
+    //cherry
     noStroke()
-    fill("Chocolate")
-    ellipse (50, 300, 60, 60);
-    ellipse (150, 330, 25, 25);
-    ellipse (150, 340, 25, 25);
-    ellipse (150, 350, 25, 25);
-
+    fill("Red")
+    ellipse (190, 40, 14, 14);
+  
     //hand
     noStroke()
     fill("LightGreen")
@@ -143,10 +148,7 @@ function draw() {
     fill("LightGreen")
     rect(75, 125, 50, 10, 10);
 
-    //cherry
-    noStroke()
-    fill("Red")
-    ellipse (150, 290, 14, 14);
+  
 
   
     //glaze
