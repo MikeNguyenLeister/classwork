@@ -1,4 +1,4 @@
-// self portrait
+/// self portrait
 
 	var x = 400;
     var y = 270
@@ -60,14 +60,21 @@ function draw() {
 	//neck
     rect(x - 10, y, w/5 - 32, h/2 - 5);
   
-	// eyes
-	fill(eyeColor);
+	/* eyes
+	//fill(eyeColor);
     push();
     translate(x+65, y-90);
     rotate(PI*-0.25);
 	ellipse(0, 0, w/2 - 25, h/5 + 7);
     pop();
+  	ellipse(x - 60, y - 90, w/2 - 25, h/5 + 7); */
+    
+    
+    // eyes
+	fill(eyeColor);
+	ellipse(x + 65, y - 90, w/2 - 25, h/5 + 7);
   	ellipse(x - 60, y - 90, w/2 - 25, h/5 + 7);
+
 
 
 	
@@ -89,13 +96,15 @@ function draw() {
     fill("white")
     rect(x + 5, y - 40, w/13 - 10, h/19)
   
+    /*
+    
     //tongue
     noStroke()
     fill("Red")
     ellipse(x, y - 10, 25, 20) 
     noStroke()
     fill(255, 215, 0, 75)
-    ellipse(x, y - 10, w/10 - 1, h/10 + 1)  
+    ellipse(x, y - 10, w/10 - 1, h/10 + 1)   */
   
   //hand
     push();
