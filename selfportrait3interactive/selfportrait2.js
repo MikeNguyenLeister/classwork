@@ -6,6 +6,10 @@
     var h = 190;
 	var eyeColor = "black";
 
+// ice cream interactivity 
+
+    var handx = mouseX;
+
 //I will fill in the bottom variables pertaining to hand and ice cream cone when I get around to the interactive self portrait tonight. Additional groups of variables may follow in case I need to group the eyes or mouth portions together.  
 
     var x2 = 0;
@@ -77,7 +81,8 @@ function draw() {
 
 	// mouth
     fill(eyeColor);
-  	arc(x, y - 40, w/10 + 14, h/2 - 15, 0, PI);
+  	var mouthHeight = map(abs(x-mouseX), 0, 200,  100, 50); 
+    arc(x, y - 40, w/10 + 14, mouthHeight, 0, PI);
   
      //teeth
     noStroke()  
@@ -92,7 +97,9 @@ function draw() {
     fill(255, 215, 0, 75)
     ellipse(x, y - 10, w/10 - 1, h/10 + 1)  
   
-  
+  //hand
+    push();
+    translate(mouseX, 0);
     //palm
     noStroke()
     fill("LightGreen")
@@ -189,10 +196,21 @@ function draw() {
     fill("LightGreen")
     rect(176, 290, 47, 12, 10);
     
+    
+    
+    
+    
+    
+    pop();
+    
     //glaze
     fill(205, 92, 92, 75)
     rect(x - x, y - y, 640, 360)
 
-
+//instructions
+fill(255);
+textSize(25);    
+text("Move mouse to move ice cream cone to mouth.", 10,25)
+    
  
 }
