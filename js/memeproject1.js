@@ -46,10 +46,3 @@ function draw(){
 
 	
 
-
-    /*
-    textSize(50);
-	stroke('darkblue');
-	strokeWeight(10);
-	textFont("Verdana");
-	text("in the BRONX.", 200, 300); */
