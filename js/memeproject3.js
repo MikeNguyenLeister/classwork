@@ -91,7 +91,7 @@ function draw(){
 	text("before lockdown", 100, 440);
 	fill('white');
     textFont ("Verdana");
-    textSize(15);
+    textSize(12);
     push();
 	text("Now click & hold mouse button in meme to fast forward time.", mouseX, mouseY);
 	pop();
