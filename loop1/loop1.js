@@ -21,9 +21,9 @@ function setup() {
   	   var size = random(1, 80);
   	   var y = random(50,100)
 
-  		var r = random(0, 255);
-		var g = random(0, 100);
-		var b = random(100, 255);
+  		var r = random(100, 255);
+		var g = random(125, 255);
+		var b = random(150, 255);
 
 //spaceship top lid
 		fill('azure');
