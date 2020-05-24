@@ -9,11 +9,20 @@ https://www.w3schools.com/colors/colors_names.asp
 
 
 */
-
+var canvas;
 function setup() {
 	createCanvas(900, 400);
-  
+    canvas = createCanvas(900,400);
+    canvas.position (300,300);
 
+    var saveButton = createButton('Save Image');
+    saveButton.mousePressed(saveImage);
+   var patternButton = createButton('New Pattern');
+    patternButton.mousePressed(pattern);
+    saveButton.position (430, 725);
+    patternButton.position(300, 725);
+
+  
 
      //background layer
         fill(47, 79, 79);
@@ -21,11 +30,9 @@ function setup() {
  
     pattern(); 
 
-    var patternButton = createButton('New Pattern');
-    patternButton.mousePressed(pattern);
+   
+    
 
-    var saveButton = createButton('Save Image');
-    saveButton.mousePressed(saveImage);
 }
 
 function saveImage() {

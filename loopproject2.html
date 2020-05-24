@@ -18,7 +18,13 @@ Trani, Paul. Designing a First Website with Dreamweaver CC.
 https://www.lynda.com/Dreamweaver-tutorials/Designing-First-Website-Dreamweaver-CC/2809593-2.html. Accessed 16 April 2020.
 
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/abel:n4:default;source-sans-pro:n4,n3,n2,n7:default;kristi:n4:default.js"></script>   
-   
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/p5.min.js"></script>
+  <script src="js/loop2.js"></script> 
+
 </head>
 
 <style>
@@ -32,6 +38,30 @@ p {
 body {
     background-image: url(images/lasercat3.jpg);
 }
+
+button {
+  background: #b9137c;
+  color: white;
+  padding: .5em;
+  border: none;
+  border-radius: .5em;
+  font-size: 18px;
+  cursor: pointer;
+
+
+
+
+}
+#sketch {
+  max-width: 900px;
+  margin:0 auto;
+  position:relative;
+
+
+
+
+}
+</style>
 </style>
     
 <body style="padding-top: 70px">
@@ -59,15 +89,17 @@ body {
     <header> <h1>Multimedia and Programming I</h1></header>
     <section>
         <h2>Loop #2: User Interface</h2> 
-        
+         
+        <div id="sketch" >
+
+         <script class="loop" src="js/loop2.js"></script>
+       </div>
+
      
     </section>
 
 	<footer>Photo by Katya Havoc.  Licensed under Standard License by Adobe. </footer>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/p5.min.js"></script>
- <script src="js/loop2.js"></script>
+
+
 </body>
 </html>
