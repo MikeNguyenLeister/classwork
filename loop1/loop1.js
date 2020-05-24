@@ -12,7 +12,7 @@ https://www.w3schools.com/colors/colors_names.asp
 
 
 function setup() {
-	createCanvas(800, 400);
+	createCanvas(900, 400);
 	background("#0f292f"); 
 	rectMode(CENTER);
 
