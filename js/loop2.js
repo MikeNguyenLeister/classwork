@@ -10,11 +10,16 @@ https://www.w3schools.com/colors/colors_names.asp
 
 */
 
-
 function setup() {
 	createCanvas(900, 400);
-    
-    pattern(); // generate a pattern to start
+  
+
+
+     //background layer
+        fill(47, 79, 79);
+        rect(0,0, 900, 400);
+ 
+    pattern(); 
 
     var patternButton = createButton('New Pattern');
     patternButton.mousePressed(pattern);
@@ -28,10 +33,11 @@ function saveImage() {
 }
 
 function pattern() {
-	background("#0f292f"); 
+	
 	rectMode(CENTER);
 
 
+   background(47, 79, c); 
   for (var x = 100; x < width; x += 145) {
   	   var size = random(1, 80);
   	   var y = random(50,100)
@@ -39,9 +45,12 @@ function pattern() {
   		var r = random(100, 255);
 		var g = random(125, 255);
 		var b = random(150, 255);
+        var c = random(25,79);
+
+
 
 //spaceship top lid
-		fill('azure');
+		fill(b);
 		ellipse(x, y+120,  size+49, size+ 20);
 
 //spaceship middle part 1
