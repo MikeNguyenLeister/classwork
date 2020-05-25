@@ -1,71 +1,88 @@
+/*
+in.
+
 /* Some code was inspired from The Coding Train. See (https://www.youtube.com/watch?v=1c1_TMdf8b8).
 
-Shiffman, Daniel. "4.2: Nested Loops - p5js Tutorial." The Coding Train. Sept. 11, 2015:  
-     https://www.youtube.com/watch?v=1c1_TMdf8b8 .  */ 
+Shiffman, Daniel. "Loading and Playing - p5.js Sound Tutorial." The Coding Train, June 7 2016:  
+    https://www.youtube.com/watch?v=Pn1g1wjxl_0 .  .  
 
 
-var colorSlider;
+tuberatanka. [C]at meow. "110011_tuberatanka_cat-meow." FreeSound, Dec. 6 ,2010:
+    https://freesound.org/people/timtube/sounds/61259/ . */
+
+/*
+
+var img;
+var x = 300;
+var y = 80;
+var cat;
+
+function preload() {
+    img = loadImage("dog.png");
+    cat = loadSound('meow'.wav);
+
+}
+
+
 function setup() {
 
-    var canvas = createCanvas(800, 400);
-    canvas.parent("sketch");
+    var canvas = createCanvas(600, 600);
+    background("black");
 
-
-
-    createP("Color Slider");
-    colorSlider = createSlider(0,255);
-    colorSlider.input(pattern);
-     var saveButton = createButton('Save Image');
-    saveButton.mousePressed(saveImage);
-    pattern();
-}   
-
-
-function saveImage() {
-    save('pattern.png');
 }
 
-function pattern() {
-    background(7, 33, 44);
-    stroke('black');
-    var size = -1;
-    var d = -2;
+function draw() {
+    image(img, 0, 0, 600, 600);
+    textSize(40);
+    textFont("Comic Sans MS");
+    fill('purple');
+    text("CLICK ENTER", x + 20, y + 100);
+    fill('black');
+    textFont("Brush Script MT");
+    textSize(50);
+    text("to hear the dog", x + 30, y + 150);
+    textSize(60);
+    fill('coral');
+    text("BARK!", x + 100, y + 215);
+            
+}
+
+    if (keyIsPressed) {
+        if (key == 'ENTER') {
+            
+            
+        } else {
+            cat.play();
+            textSize(50);
+            fill('gray');
+            text("...Or meow.", x +100, y+ 268);
 
 
 
-    for (var x= 0; x <=width; x +=50) {
-        for (var y = 0; y <= height; y += 50){
-        var r = random(100, 255);
-        var g = random(125, 255);
-        var b = 0;
 
-
-//spaceship top lid
-        fill(100, 198, 255);
-        ellipse(x, y+(120/d),  size+(49/d), size+ (20/d));
-
-//spaceship middle part 1
-        fill(r,g,b);
-        ellipse(x, y+(127/d), size+(96/d),  size+(25/d));
-
-
-//spaceship middle part 2
-        fill(30, 133, 174);
-        ellipse(x, y+(130/d), size+(95/d),  size+(20/d));
-
-//spaceship bottom lid
-
-        fill(22, 100, 131);
-        ellipse(x, y+(135/d), size+(60/d), size+(19/d));
-
-//entrance
-       fill(30, 133, 174);
-        ellipse(x, y+(140/d),  size+(36/d),size+ (9/d));
- }
-
+        }
     }
+
+*/
+
+
+
+var sound;
+var slider; 
+
+function setup() {
+    createCanvas(200, 200);
+    sound = loudSound("meow.mp3", loaded);
+    sound.setVolume(0.6);
+    sliderRate = createSlider(0, 1.5, 1, 0.01);
+    sliderPan = createSlider(-1, 1, 0.5, 0.01);
+    
 }
 
-
-
-
+function loaded(){
+    song.play();
+}
+function draw(){
+    background(0)
+    sound.setVolume(slider.value());
+}
