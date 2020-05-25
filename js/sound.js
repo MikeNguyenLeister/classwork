@@ -27,15 +27,14 @@ var y = 80;
 var cat;
 
 function preload() {
-    img = loadImage("images/dog.png");
+    img = loadImage('images/dog.png');
     cat = loadSound('images/meow.mp3');
 
 }
 
 
 function setup() {
-
-    createCanvas(600, 600);
+     var canvas = createCanvas(600, 600);
     background("black");
 
 }
