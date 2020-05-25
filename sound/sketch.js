@@ -80,7 +80,7 @@ function setup() {
 }
 
 function loaded(){
-    song.play();
+    sound.play();
 }
 function draw(){
     background(0)
